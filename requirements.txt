@@ -1,0 +1,7 @@
+streamlit
+langchain
+pandas
+matplotlib
+mistral
+ollama
+sqlite3

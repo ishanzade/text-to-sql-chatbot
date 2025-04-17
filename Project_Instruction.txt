@@ -1,0 +1,64 @@
+TEXT TO SQL CHATBOT:
+-------------------
+UI Interface --> Streamlit   (pip install streamlit)
+
+Ollama --> Mistral Offline model  (ollama pull mistral) (ollama run mistral)
+
+python virtual environment --> python -m evenv my_env
+
+To Run the Application --> streamlit run app.py
+
+visualization  --> matplotlib
+
+text-to-sql --> langchain + ollama 
+
+DataBase  -->  SQLite
+
+chatlogs  --> JSON file 
+
+
+Structure of project
+____________________
+
+text_to_sql_chatbot
+│
+├── app.py
+├── requirements.txt
+├── data
+│   ├── sales.db              # The SQLite DB file generated from your CSV
+│   ├── chat_history.json     # Saved chat history
+│   └── query_logs.json       # For popular query tracking
+│
+├── utils/
+│   ├── db_handler.py
+│   ├── llm_wrapper.py
+│   ├── chat_manager.py
+│   ├── query_logger.py
+│   └── visualizer.py
+│
+├── sales_dataset.csv         # Original dataset
+
+
+Project Overview:
+----------------
+
+- This is an offline AI chatbot built using Streamlit, SQLite, and LangChain using Ollama (Mistral model) that allows users to interact
+  with a sales dataset in natural language.
+  
+- whatever promopt we will give as our question to chatbot, internally the chatbot convert it into SQl query and run it on local SQLite database.
+
+- we get result 3 ways:
+                1) SQL query 
+				2) Visualization
+				3) Table view
+				
+- It will main our chatbot searches with 5 most recently asked question.
+
+- its totally a offline model running on local machine (NoAPI used).
+
+
+
+                               
+
+
+
