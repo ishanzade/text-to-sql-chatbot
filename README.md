@@ -10,7 +10,7 @@ This is an offline AI chatbot that translates NLP into SQL queries and runs them
 - 🧾 **Generates accurate SQL queries** using local LLM (Mistral via Ollama)
 - 📋 **Displays results in table format**
 - 📊 **Visualizes query results with charts**
-- 🧠 **Maintains chat history** like WhatsApp (on the side panel)
+- 🧠 **Maintains search history** like ChatGPT (on the side panel)
 - 🔥 **Top 5 popular queries** displayed on startup
 - 🛠️ **Fully offline and local**, no internet or OpenAI key needed
 
